@@ -1,10 +1,16 @@
+#Lucas Bonetti  06/2025
+#Registrar em arquivo local nome e número de telefone
+#- Funcionalidades: inserir, excluir, alterar, "olhar"
+#- "Olhar": lista tabular de contatos em ordem alfabética com nome e telefone
+#- Busca de contatos por nome insensível
+
 import argparse
 from controllers.contact_controller import ContactController
 from views.cli import print_contacts
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Agenda Telefônica - Gerencie seus contatos.",
+        description="Agenda Telefônica",
         epilog="Exemplos:\n"
                "  python3 main.py add --name 'Maria' --phone 11999999999\n"
                "  python3 main.py search --name 'Mar'\n"
